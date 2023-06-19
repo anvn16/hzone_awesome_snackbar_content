@@ -67,7 +67,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
     double rightSpace = size.width * 0.12;
 
     if (isMobile) {
-      horizontalPadding = size.width * 0.01;
+      horizontalPadding = size.width * 0.005;
     } else if (isTablet) {
       leftSpace = size.width * 0.05;
       horizontalPadding = size.width * 0.2;
@@ -96,7 +96,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
 
           /// Splash SVG asset
           Positioned(
-            bottom: 0,
+            top: 0,
             left: 0,
             child: ClipRRect(
               borderRadius: const BorderRadius.only(
@@ -106,8 +106,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
                 AssetsPath.bubbles,
                 height: size.height * 0.06,
                 width: size.width * 0.05,
-                colorFilter:
-                    _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
+                /*colorFilter:
+                    _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),*/
                 package: 'awesome_snackbar_content',
               ),
             ),
@@ -132,8 +132,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
                 SvgPicture.asset(
                   AssetsPath.back,
                   height: size.height * 0.06,
-                  colorFilter:
-                      _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
+                  /*colorFilter:
+                      _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),*/
                   package: 'awesome_snackbar_content',
                 ),
                 Positioned(
