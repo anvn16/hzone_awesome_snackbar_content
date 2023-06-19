@@ -96,7 +96,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
 
           /// Splash SVG asset
           Positioned(
-            bottom: 0,
+            top: 0,
             left: 0,
             child: ClipRRect(
               borderRadius: const BorderRadius.only(
