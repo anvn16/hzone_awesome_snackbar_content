@@ -67,7 +67,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
     double rightSpace = size.width * 0.12;
 
     if (isMobile) {
-      horizontalPadding = size.width * 0.01;
+      horizontalPadding = size.width * 0.005;
     } else if (isTablet) {
       leftSpace = size.width * 0.05;
       horizontalPadding = size.width * 0.2;
